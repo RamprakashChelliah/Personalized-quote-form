@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+
+    <link rel="stylesheet" href="./form-style.css">
+    
+</head>
+<body>
+    <div class="top-bar">
+        <div class="left">
+            Trust
+        </div>
+        <div class="right">
+            <div class="contact">
+                <ul>
+                    <li><img src="./phone.svg" alt=""></li>
+                    <li>
+                        <p>(855) 655-1801</p>
+                        <p class="toll-free">(Toll free) Mon - Fri | 8:30 AM to 6:00 PM</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cross-code">
+                <h1>|</h1>
+            </div>
+            <div class="logo">
+                <ul>
+                    <li><img src="./location.svg" alt=""></li>
+                    <li><img src="./email.svg" alt=""></li>
+                </ul>
+            </div>
+            <div class="cross-code">
+                <h1>|</h1>
+            </div>
+            <div class="login">
+                <input type="button" name="login" id="login" value="Login">
+            </div>
+        </div>
+    </div>
+
+    <!-- Body content -->
+    <div class="body-content">
+        <div class="left">
+            <img src="./arrow.png" alt="">
+        </div>
+    
+        <div class="center">
+            <p>Get Your Quote</p>
+            <h2><b>Get your Perssonalized Protection Quote</b></h2>
+            <hr>
+            <div class="form">
+                <form action="GET">
+                    <label for="locations"><b>Where do you practice? *</b></label>
+                    <p>Your practice location or zip code determines which plans are available.</p>
+                    <select name="locations" id="locations" required>
+                        <option value="newyork">New york</option>
+                        <option value="london">London</option>
+                        <option value="jermany">Jermany</option>
+                    </select>
+                    <br>
+                    <div class="policy-type">
+                        <label for="policy-type"><b>Select your policy type *</b></label>
+                        <br>
+                        <div class="policy-radio">
+                            <input type="radio" name="policy-type" id="policy-type1">
+                            <input type="radio" name="policy-type" id="policy-type2">
+                            <br>
+                            <label for="policy-type1" class="professional-policy">
+                                <ul>
+                                    <li><img src="./doctor.svg" alt=""></li>
+                                    <li><span>Professional Liability</span></li>
+                                </ul>
+                            </label>
+
+                            <label for="policy-type2" class="student-policy">
+                                <ul>
+                                    <li><img src="./graduate.svg" alt=""></li>
+                                    <li><span>Student Liability</span></li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="dropdown">
+                        <div>
+                            <label for="coverages"><b>Type of Coverage? *</b></label>
+                            <br>
+                            <select name="coverages" id="coverages">
+                                <option value="occurance">Occurance</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="practice-types" id="practice-text"><b>Select your area of practice or study *</b></label>
+                            <br>
+                            <select name="practice-types" id="practice-types">
+                                <option value="medical-assistant">Medical assistant</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h4><b>Limits of Professional Liability</b></h4>
+                    <p>Please ensure this cover is sufficient for you.</p>
+                    <select name="liability" id="liability">
+                        <option name="1-3lakh" value="1-3lakh">$1,000,000 / $3,000,000</option>
+                        <option name="3-6lakh" id="3-6lakh">$3,000,000 / $6,000,000</option>
+                    </select>
+    
+                    <div class="note">
+                        <ul>
+                            <li> <img src="./doctor.svg" alt=""></li>
+                            <li>
+                                <p><b>Professional Liability Insurance Policy covers</b></P>
+                                <p>Good Samaritan Liability, Professional Injury Liability, General Liability</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+    
+                    <div class="inc-dec">
+                        <div class="health-care">
+                            <p><b>Health Care Providers *</b></p>
+                            <div class="health-care-plus">
+                                <div class="minus">
+                                    <span><b>&#8722</b></span>
+                                </div>
+                                <span>|</span>
+                                <div class="number">
+                                    <span>1</span>
+                                </div>
+                                <span>|</span>
+                                <div class="plus">
+                                    <span><b>&#43</b></span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="per-week">
+                            <p><b>Your Hours Worked (Per Week)</b></p>
+                            <div class="per-week-plus">
+                                <div class="minus">
+                                    <span><b>&#8722</b></span>
+                                </div>
+                                <span>|</span>
+                                <div class="number">
+                                    <span>8</span>
+                                </div>
+                                <span>|</span>
+                                <div class="plus">
+                                    <span><b>&#43</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="check-box">
+                        <div class="self-employed">
+                            <label for="self-employee"><b>Are You Self-Employed?</b></label>
+                            <br>
+                            <input type="radio" name="self-employee" id="self-employee-yes"> Yes
+                            <input type="radio" name="self-employee" id="self-employee-no"> No
+                        </div>
+    
+                        <div class="incorporated">
+                            <label for="incorporated"><b>Are You Icorporated?</b></label>
+                            <br>
+                            <input type="radio" name="incorporated" id="incorporated-yes"> Yes
+                            <input type="radio" name="incorporated" id="incorporated-no"> No
+                        </div>
+                    </div>
+    
+                    <input type="button" value="Generate Quote >" id="generate-quote" disabled>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="content-right">
+            <div class="right-top">
+                <div class="health-logo">
+                    <img src="./health-security.svg" alt="">
+                </div>
+                <div>
+                    <p><b>Your Quote Summary</b></p>
+                </div>
+            </div>
+            <div class="limit">
+                <p>Limits of Liability</p>
+                <p><b>$1,000,000 / $3,000,000</b></p>
+            </div>
+            <div class="details">
+                <div class="location">
+                    <p>Location</p>
+                    <span class="right-side"><b>New York</b></span>
+                </div>
+        
+                <div class="policy">
+                    <p>Policy Type</p>
+                    <span class="right-side"><b>Professional Liability</b></span>
+                </div>
+        
+                <div class="coverage">
+                    <p>Type of Coverage</p>
+                    <span class="right-side"><b>Occurrence</b></span>
+                </div>
+        
+                <div class="profession">
+                    <p>Profession</p>
+                    <span class="right-side"><b>Certified Medical Assistant</b></span>
+                </div>
+            </div>
+        
+            <div class="work-hour">
+                <p>8 Hrs Worked per week</p>
+                <a href="#"><b>View More</b></a>
+            </div>
+        
+            <div class="indication">
+                <p><b>Premium Indication</b></p>
+        
+                <div class="base">
+                    <p>Base Premium</p>
+                    <span class="right-side"><b>$221.00</b></span>
+                </div>
+        
+                <div class="discount">
+                    <p>Discount</p>
+                    <span class="right-side"><b>($11.00)</b></span>
+                </div>
+            </div>
+        
+            <hr class="horizontal-line">
+        
+            <div class="annual-premium">
+                <div>
+                    <p>Annual premium</p>
+                    <span>View Breakdown</span>
+                </div>
+                <div class="right-side">
+                    <p><b>$210.00</b></p>
+                </div>
+            </div>
+        
+            <div class="button">
+                <input type="button" name="coverage-apply" id="coverage-apply" value="Change to Apply for Coverage >">
+                <input type="button" name="save" id="save" value="Save your Quote">
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>

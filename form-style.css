@@ -1,0 +1,542 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 55px;
+    background-color: #0C2340;
+}
+
+.top-bar .left {
+    margin: 10px 0 0 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.top-bar .right {
+    margin-left: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.contact ul,
+.logo ul  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.contact ul li,
+.logo ul li {
+    padding: 0 15px;
+}
+
+.toll-free{
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.cross-code {
+    opacity: 0.2;
+}
+
+#login {
+    margin-left: 25px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #FFFFFF;
+}
+
+.top-bar .right img:hover{
+    cursor: pointer;
+}
+
+/* body-div-styles */
+.body-content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-content .left {
+    width: 150px;
+    align-content: center;
+}
+
+.body-content .left img{
+    width: 30px;
+    margin: 10px 0 0 80px;
+}
+
+.body-content .left img:hover{
+    cursor: pointer;
+}
+
+.center {
+    width: 580px;
+    margin-left: 20px;
+}
+
+hr {
+    background-color: green;
+    height: 2px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form p {
+    font-size: 12px;
+}
+
+#locations,
+#liability,
+#coverages,
+#practice-types {
+    padding: 10px 10px;
+    width: 272px;
+    margin: 10px 0;
+
+}
+
+#practice-types,
+#practice-text{
+    margin-left: 30px;
+}
+
+.dropdown,
+.inc-dec,
+.check-box,
+.note ul,
+.policy-radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inc-dec p{
+    margin-bottom: 10px;
+}
+
+.dropdown label{
+    width: 350px;
+}
+
+.health-care,
+.self-employed {
+    width: 200px;
+}
+
+#self-employee-yes,
+#incorporated-yes,
+.check-box,
+.policy-radio {
+    margin-top: 10px;
+}
+
+#self-employee-no,
+ #incorporated-no{
+    margin-left: 20px;
+}
+
+.incorporated{
+    margin-left: 100px;
+}
+.health-care p,
+.per-week p {
+    font-size: 16px;
+}
+
+.note {
+    margin-top: 10px;
+    background-color: #f5f5f5;
+}
+
+.note ul {
+    list-style-type: none;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+#generate-quote {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: #e6e1e1;
+    color: #918989;
+    border-radius: 5px;
+}
+
+select {
+    border-radius: 5px;
+    border-color: #B2BEB5;
+}
+
+.professional-policy,
+.student-policy {
+    border: 1px solid #B2BEB5;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+}
+
+.professional-policy:hover,
+.student-policy:hover{
+    color: #5bbdeb;
+    background-color: #c4e9fc;
+    border-color: #5bbdeb;
+}
+
+.student-policy {
+    margin-left: 30px;
+}
+
+.professional-policy ul,
+.student-policy ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.professional-policy ul li,
+.student-policy ul li{
+    padding: 0 5px;
+}
+
+.policy-type input[type="radio"] {
+    display: none;
+}
+
+#policy-type1:checked ~ .professional-policy,
+#policy-type2:checked ~ .student-policy{
+    color: #5bbdeb;
+    background-color: #c4e9fc;
+    border-color: #5bbdeb;
+}
+.health-care-plus,
+.per-week-plus {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #B2BEB5;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.health-care-plus .minus,
+.per-week-plus .minus,
+.plus
+{
+    padding: 0 10px;
+}
+
+.health-care-plus .number,
+.per-week-plus .number {
+    width: 170px;
+    text-align: center;
+}
+
+.per-week {
+    margin-left: 100px;
+}
+
+/* Right-side-style */
+.content-right {
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 380px;
+    height: 610px;
+    background-color: #FEFCFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.right-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.health-logo {
+    padding-right: 10px;
+}
+
+.limit {
+    background-color: #f5f5f5;
+    padding: 5px 20px;
+}
+
+.limit p{
+    padding: 5px 0;
+}
+
+.details, .indication{
+    padding: 10px 20px;
+}
+
+.location,
+.policy,
+.coverage,
+.profession,
+.base,
+.discount,
+.annual-premium {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.details p {
+    width: 120px;
+}
+
+.right-side {
+    width: 200px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.work-hour {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.work-hour p {
+    width: 252px;
+}
+
+.work-hour a {
+    text-decoration: none;
+}
+
+.discount {
+    color: green;
+}
+
+.base span{
+    margin-left: 25px;
+}
+
+.discount span {
+    margin-left: 60px;
+}
+
+.horizontal-line {
+    height: 1px;
+    margin: 0 20px;
+    background-color: #B2BEB5;
+}
+
+.annual-premium{
+    padding: 10px 20px;
+}
+
+.annual-premium .right-side{
+    margin-left: 10px;
+}
+
+.annual-premium span {
+    color: blue;
+    font-size: 12px;
+}
+
+#coverage-apply,
+#save {
+    width: 90%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 0 20px;
+}
+
+#coverage-apply {
+    background-color: #eb4909;
+}
+
+#save {
+    margin-top: 10px;
+    background-color: #0C2340;
+}
+
+input[type="button"], a, .annual-premium span{
+    cursor: pointer;
+}
+
+
+@media screen and (max-device-width : 1024px) 
+{
+    .top-bar .right {
+        margin-left: 340px;
+        position: absolute;
+    }
+
+    /* Right-side-style */
+    .content-right {
+        width: 580px;
+        margin: 10px 0 20px 170px;
+        height: 615px;
+    }
+
+    #coverage-apply,
+    #save {
+        width: 97%;
+    }
+
+    .location p,
+    .policy p,
+    .coverage p,
+    .profession p,
+    .base p,
+    .discount p,
+    .annual-premium p
+    {
+        width: 250px;
+    }
+
+    .right-side {
+        margin-left: 70px;
+        width: 200px;
+    }
+
+    .annual-premium .right-side{
+        margin-left: 20px;
+    }
+
+    .work-hour a{
+        margin-left: 200px;
+    }
+    
+    .indication span{
+        margin-left: 70px;
+    }
+
+    .button{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-device-width : 768px) 
+{
+    .top-bar .right {
+        margin-left: 100px;
+        position: absolute;
+    }
+
+    /* Body-content-style */
+    .body-content{
+        width: 650px;
+    }
+
+    .body-content .left {
+        width: 20px;
+    }
+
+    .body-content .left img{
+        margin-left: 5px;
+        width: 10px;
+    }
+
+    .center {
+        width: 600px;
+        margin-left: 20px;
+    }
+
+    .content-right {
+        width: 650px;
+        margin-left: 30px;
+        height: 615px;
+    }
+}
+
+@media screen and (max-device-width : 425px) 
+{
+    .top-bar{
+        width: 200%;
+    }
+
+    .top-bar .right {
+        margin-left: 100px;
+        width: 200%;
+    }
+
+    /* Body-content-style */
+    .body-content{
+        width: 200%;
+    }
+
+    .body-content .left {
+        width: 40px;
+    }
+
+    .body-content .left img{
+        width: 20px;
+        margin-left: 10px;
+    }
+    
+    .center {
+        width: 650px;
+        margin-left: 30px;
+    }
+
+    .content-right {
+        width: 650px;
+        margin-left: 70px;
+    }
+}
+
+/* @media screen and (max-device-width : 375px) 
+{
+    .top-bar{
+        width: 180%;
+    }
+
+    .top-bar .right {
+        margin-left: 20px;
+        width: 500px;
+        position: absolute;
+    }
+
+    .body-content{
+        width: 560px;
+    }
+
+    .body-content .left {
+        width: 20px;
+    }
+    
+    .body-content .left p{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    
+    .content-right {
+        width: 610px;
+        margin-left: 50px;
+    }
+} */
