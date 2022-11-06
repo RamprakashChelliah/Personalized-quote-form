@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    font-family: Inter;
+}
+
 .top-bar {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +50,7 @@
 }
 
 .toll-free{
-    font-size: 12px;
+    font-size: 10px;
     opacity: 0.7;
 }
 
@@ -75,7 +79,7 @@
 }
 
 .body-content .left {
-    width: 150px;
+    width: 130px;
     align-content: center;
 }
 
@@ -89,7 +93,7 @@
 }
 
 .center {
-    width: 580px;
+    width: 600px;
     margin-left: 20px;
 }
 
@@ -103,7 +107,7 @@ hr {
 }
 
 .form p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #locations,
@@ -145,9 +149,12 @@ hr {
 
 #self-employee-yes,
 #incorporated-yes,
-.check-box,
 .policy-radio {
     margin-top: 10px;
+}
+
+.check-box{
+    margin-top: 20px;
 }
 
 #self-employee-no,
@@ -160,7 +167,7 @@ hr {
 }
 .health-care p,
 .per-week p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .note {
@@ -241,7 +248,7 @@ select {
     padding: 10px;
     border: 1px solid #B2BEB5;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .health-care-plus .minus,
@@ -265,11 +272,12 @@ select {
 .content-right {
     margin-top: 10px;
     margin-left: 70px;
-    width: 380px;
+    width: 390px;
     height: 610px;
     background-color: #FEFCFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .right-top {
@@ -309,7 +317,7 @@ select {
 }
 
 .details p {
-    width: 120px;
+    width: 140px;
 }
 
 .right-side {
@@ -326,7 +334,7 @@ select {
 }
 
 .work-hour p {
-    width: 252px;
+    width: 275px;
 }
 
 .work-hour a {
@@ -337,12 +345,16 @@ select {
     color: green;
 }
 
+/* .discount p{
+    width: 80px;
+} */
+
 .base span{
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .discount span {
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .horizontal-line {
@@ -356,7 +368,7 @@ select {
 }
 
 .annual-premium .right-side{
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .annual-premium span {
@@ -388,17 +400,39 @@ input[type="button"], a, .annual-premium span{
 }
 
 
-@media screen and (max-device-width : 1024px) 
+@media screen and (max-device-width : 1024px)
 {
     .top-bar .right {
-        margin-left: 340px;
+        margin-left: 400px;
         position: absolute;
+    }
+
+    .body-content .center{
+        width: 650px;
+        font-size: 18px;
+    }
+
+    .student-policy, #practice-text, #practice-types{
+        margin-left: 50px;
+    }
+
+    .per-week{
+        margin-left: 120px;
+    }
+
+    .self-employed{
+        width: 220px;
+    }
+
+    #generate-quote{
+        font-size: 18px;
+        height: 40px;
     }
 
     /* Right-side-style */
     .content-right {
-        width: 580px;
-        margin: 10px 0 20px 170px;
+        width: 650px;
+        margin: 10px 0 20px 150px;
         height: 615px;
     }
 
@@ -415,22 +449,22 @@ input[type="button"], a, .annual-premium span{
     .discount p,
     .annual-premium p
     {
-        width: 250px;
+        width: 300px;
     }
 
     .right-side {
         margin-left: 70px;
-        width: 200px;
+        width: 220px;
     }
 
-    .annual-premium .right-side{
-        margin-left: 20px;
+    .annual-premium .right-side p{
+        width: 260px;
     }
 
     .work-hour a{
         margin-left: 200px;
     }
-    
+
     .indication span{
         margin-left: 70px;
     }
@@ -441,53 +475,11 @@ input[type="button"], a, .annual-premium span{
 
 }
 
-@media screen and (max-device-width : 768px) 
+@media screen and (max-device-width : 768px)
 {
     .top-bar .right {
-        margin-left: 100px;
+        margin-left: 150px;
         position: absolute;
-    }
-
-    /* Body-content-style */
-    .body-content{
-        width: 650px;
-    }
-
-    .body-content .left {
-        width: 20px;
-    }
-
-    .body-content .left img{
-        margin-left: 5px;
-        width: 10px;
-    }
-
-    .center {
-        width: 600px;
-        margin-left: 20px;
-    }
-
-    .content-right {
-        width: 650px;
-        margin-left: 30px;
-        height: 615px;
-    }
-}
-
-@media screen and (max-device-width : 425px) 
-{
-    .top-bar{
-        width: 200%;
-    }
-
-    .top-bar .right {
-        margin-left: 100px;
-        width: 200%;
-    }
-
-    /* Body-content-style */
-    .body-content{
-        width: 200%;
     }
 
     .body-content .left {
@@ -495,48 +487,47 @@ input[type="button"], a, .annual-premium span{
     }
 
     .body-content .left img{
+        margin-left: 5px;
         width: 20px;
-        margin-left: 10px;
     }
-    
-    .center {
-        width: 650px;
-        margin-left: 30px;
+
+    .body-content .center {
+        width: 600px;
+        margin-left: 40px;
+        font-size: 16px;
+    }
+
+    .student-policy, #practice-text, #practice-types{
+        margin-left: 40px;
     }
 
     .content-right {
-        width: 650px;
-        margin-left: 70px;
+        width: 600px;
+        margin-left: 80px;
+        height: 615px;
     }
+
+    .location p,
+    .policy p,
+    .coverage p,
+    .profession p,
+    .base p,
+    .discount p,
+    .annual-premium p
+    {
+        width: 240px;
+    }
+
+    .body-content .content-right .right-side{
+        margin-left: 80px;
+    }
+   
+    .annual-premium P{
+        width: 200px;
+    } 
+
+    .work-hour a{
+        margin-left: 190px;
+    }
+
 }
-
-/* @media screen and (max-device-width : 375px) 
-{
-    .top-bar{
-        width: 180%;
-    }
-
-    .top-bar .right {
-        margin-left: 20px;
-        width: 500px;
-        position: absolute;
-    }
-
-    .body-content{
-        width: 560px;
-    }
-
-    .body-content .left {
-        width: 20px;
-    }
-    
-    .body-content .left p{
-        font-size: 30px;
-        margin-left: 10px;
-    }
-    
-    .content-right {
-        width: 610px;
-        margin-left: 50px;
-    }
-} */
